@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    float hr_t, salario_minimo;
+    float valor_hora, salario_bruto, imposto, salario_liquido;
+    
+    printf("Digite o número de horas trabalhadas: ");
+    scanf("%f", &hr_t);
+    
+    printf("Digite o valor do salário mínimo: R$ ");
+    scanf("%f", &salario_minimo);
+    
+    
+    valor_hora = salario_minimo / 2;           
+    salario_bruto = hr_t * valor_hora;  
+    imposto = salario_bruto * 0.03;            
+    salario_liquido = salario_bruto - imposto; 
+    
+
+    printf("Salário a receber: R$ %.2f\n", salario_liquido);
+    
+    return 0;
+}

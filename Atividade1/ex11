@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double n, q2, c3, r2, r3;
+    
+    printf("Digite um numero positivo: ");
+    scanf("%lf", &n);  // %lf para double//
+    
+    while (n <= 0) {
+        printf("Erro. Digite um numero maior que 0: ");
+        scanf("%lf", &n);
+    }
+    
+    q2 = n * n;
+    c3 = n * n * n;
+    r2 = sqrt(n);
+    r3 = cbrt(n);  
+    
+    printf("Numero: %.2f\n", n);
+    printf("Quadrado: %.2f\n", q2);
+    printf("Cubo: %.2f\n", c3);
+    printf("Raiz quadrada: %.4f\n", r2);
+    printf("Raiz cubica: %.4f\n", r3);
+    
+    return 0;
+}

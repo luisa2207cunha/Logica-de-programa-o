@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double n1, n2, r;
+    
+    // Lê e valida o primeiro número
+    printf("Digite um numero positivo: ");
+    scanf("%lf", &n1);
+    while (n1 <= 0) {
+        printf("Erro! Digite um numero maior que 0: ");
+        scanf("%lf", &n1);
+    }
+    
+    // Lê e valida o segundo número
+    printf("Digite o segundo numero positivo: ");
+    scanf("%lf", &n2);
+    while (n2 <= 0) {
+        printf("Erro! Digite um numero maior que 0: ");
+        scanf("%lf", &n2);
+    }
+    
+    // Calcula potência
+    r = pow(n1, n2);
+    
+    // Exibe o resultado
+    printf("\n%.2f elevado por %.2f e igual a: %.2f\n", n1, n2, r);
+    
+    return 0;
+}

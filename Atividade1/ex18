@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    float peso_saco_kg, rg1_g, rg2_g;
+    float resto_kg;
+    
+    printf("Digite o peso do saco de ração (em kg): ");
+    scanf("%f", &peso_saco_kg);
+    
+    printf("Digite a ração do gato 1 (em gramas): ");
+    scanf("%f", &rg1_g);
+    
+    printf("Digite a ração do gato 2 (em gramas): ");
+    scanf("%f", &rg2_g);
+    
+    resto_kg = peso_saco_kg - ((rg1_g + rg2_g) * 5 / 1000);
+    
+    printf("\nRestará %.2f kg de ração após 5 dias.\n", resto_kg);
+    
+    if (resto_kg < 0) {
+        printf("A ração não é suficiente!\n");
+    }
+    
+    return 0;
+}

@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    float d, tj, r, vt;
+    
+    printf("Digite o valor do depósito: R$ ");
+    scanf("%f", &d);
+    
+    printf("Digite a taxa de juros (em %%): ");
+    scanf("%f", &tj);
+    
+    // Cálculos
+    r = d * (tj / 100);
+    vt = d + r;
+    
+    printf("Valor do depósito: R$ %.2f\n", d);
+    printf("Taxa de juros: %.2f%%\n", tj);
+    printf("Valor do rendimento: R$ %.2f\n", r);
+    printf("Valor total após rendimento: R$ %.2f\n", vt);
+    
+    return 0;
+}

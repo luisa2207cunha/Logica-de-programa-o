@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int n1, n2, n3;
+    //p1=2, p2=4, p3=8.//
+    float mediap;
+    
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &n1);
+    
+    printf("Digite o segundo numero: ");
+    scanf("%d", &n2);
+
+    printf("Digite o terceiro numero: ");
+    scanf("%d", &n3);
+    
+    mediap = ((n1 * 2) + (n2 * 4) + (n3 * 8)) / (n1 + n2 + n3);
+    //(( dois parenteses é o mesmo que [] na matematica ))//
+    
+    printf("Sua media é: %2f\n", mediap);
+
+    return 0;
+}

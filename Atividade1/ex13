@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    float n, p, po, j, m;
+    
+    printf("Digite um numero: ");
+    scanf("%f", &n);  
+    
+    po = n * 2.54;    
+    p = po / 12;      
+    j = p / 3;        
+    m = j / 1760;     
+    
+    printf("Aqui está os resultados: \n");
+    printf("Polegadas: %.2f\n", po);  
+    printf("Pés: %.2f\n", p);         
+    printf("Jardas: %.2f\n", j);      
+    printf("Milhas: %.2f\n", m);      
+    
+    return 0;
+}

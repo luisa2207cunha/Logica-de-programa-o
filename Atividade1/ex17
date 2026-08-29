@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main()
+{
+    float salario, c1, c2;
+    float cpmf1, cpmf2, saldo_atual;
+    
+    printf("Digite o valor do salário depositado: R$ ");
+    scanf("%f", &salario);
+    
+    printf("Digite o valor do 1º cheque: R$ ");
+    scanf("%f", &c1);
+    
+    printf("Digite o valor do 2º cheque: R$ ");
+    scanf("%f", &c2);
+    
+    cpmf1 = c1 * 0.0038;      
+    cpmf2 = c2 * 0.0038;      
+    saldo_atual = salario - c1 - c2 - cpmf1 - cpmf2;
+    
+    printf("SALDO ATUAL: R$ %8.2f\n", saldo_atual);
+    
+    if (saldo_atual < 0) {
+        printf("\nATENÇÃO: Saldo negativo! Conta em débito.\n");
+    } else if (saldo_atual == 0) {
+        printf("\nSaldo zerado.\n");
+    } else {
+        printf("\nSaldo positivo.\n");
+    }
+    
+    return 0;
+}
