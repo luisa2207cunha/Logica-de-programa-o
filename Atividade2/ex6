@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdbool.h>  // Para usar o tipo bool e valores true/false
+
+int main() {
+    int v1, v2;
+    
+    printf("Digite o primeiro valor booleano (0 para falso, 1 para verdadeiro): ");
+    scanf("%d", &v1);
+    
+    printf("Digite o segundo valor booleano (0 para falso, 1 para verdadeiro): ");
+    scanf("%d", &v2);
+    
+    if ((v1 != 0 && v1 != 1) || (v2 != 0 && v2 != 1)) {
+        printf("\nERRO: Valores invalidos! Use apenas 0 ou 1.\n");
+        return 1; 
+    }
+    
+    // Converter para booleanos
+    bool bool1 = v1;
+    bool bool2 = v2;
+    
+    
+    if (bool1 == true && bool2 == true) {
+        printf("Ambos sao verdadeiros\n");
+    }
+    else if (bool1 == false && bool2 == false) {
+        printf("Ambos sao falsos\n");
+    }
+    else {
+        printf("Os valores sao diferentes (um e verdadeiro, outro e falso)\n");
+    }
+    
+    printf("\nValor 1: %s\n", bool1 ? "VERDADEIRO" : "FALSO");
+    printf("Valor 2: %s\n", bool2 ? "VERDADEIRO" : "FALSO");
+    
+    return 0;
+}

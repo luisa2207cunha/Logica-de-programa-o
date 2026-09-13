@@ -1,0 +1,26 @@
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    
+    char nome[30];
+    char sexo;
+    char estado_civil[10];
+    int tempo_de_casamento; 
+
+    printf("Digite seu nome: ");
+    scanf(" %[^\n]", nome);  // Lê string com espaços
+    
+    printf("Digite seu sexo com M para masculino e F para feminino: ");
+    scanf(" %c", &sexo);     // Espaço antes de %c para consumir o ENTER
+    
+    printf("Digite seu estado civil todo maiusculo: ");
+    scanf(" %s", estado_civil);  // Lê string sem espaços
+    
+    if (sexo == 'F' && strcmp(estado_civil, "CASADA") == 0)  // sexo == 'F' (aspas simples)
+    {
+        printf("Digite seu tempo de casamento: ");
+        scanf("%d", &tempo_de_casamento);  
+    }
+    
+    return 0;
+}

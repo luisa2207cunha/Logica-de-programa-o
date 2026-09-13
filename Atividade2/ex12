@@ -1,0 +1,80 @@
+#include <stdio.h>
+
+int main()
+{
+    int na;
+    float n1, n2, n3, me, ma;
+   
+    printf("Por favor digite seu numero de identificação: ");
+    scanf("%d", &na);   
+    
+    printf("Digite sua nota na primeira prova: ");
+    scanf("%f", &n1);
+    
+    printf("Digite sua nota na segunda prova: ");
+    scanf("%f", &n2);
+    
+    printf("Digite sua nota na terceira prova: ");
+    scanf("%f", &n3);
+    
+    printf("Digite sua nota nas medias nas atividades: ");
+    scanf("%f", &me);
+    
+    ma = (n1 +((n2 * 2)) + ((n3 * 3)) + me) / 7;
+    
+    if (ma >= 90)
+    {
+        printf("Seu numero de identificação: %d", na);
+        printf("Sua nota1: %2.f\n", n1);
+        printf("Sua nota2: %2.f\n", n2);
+        printf("Sua nota3: %2.f\n", n3);
+        printf("Sua nota das medias de atividade: %2.f\n", me);
+        printf("Sua nota de media de aproveitamento: %2.f\n", ma);
+        printf("conceito A obtido.");
+        printf("Você está aprovado");
+    }
+    else if (75 <= ma < 90){
+        printf("Seu numero de identificação: %d", na);
+        printf("Sua nota1: %2.f\n", n1);
+        printf("Sua nota2: %2.f\n", n2);
+        printf("Sua nota3: %2.f\n", n3);
+        printf("Sua nota das medias de atividade: %2.f\n", me);
+        printf("Sua nota de media de aproveitamento: %2.f\n", ma);
+        printf("conceito B obtido.");
+        printf("Você está aprovado");
+    }
+    else if (60 <= ma < 75){
+        printf("Seu numero de identificação: %d", na);
+        printf("Sua nota1: %2.f\n", n1);
+        printf("Sua nota2: %2.f\n", n2);
+        printf("Sua nota3: %2.f\n", n3);
+        printf("Sua nota das medias de atividade: %2.f\n", me);
+        printf("Sua nota de media de aproveitamento: %2.f\n", ma);
+        printf("conceito C obtido.");
+        printf("Você está aprovado");
+    }
+    else if (40 <= ma <60){
+        printf("Seu numero de identificação: %d", na);
+        printf("Sua nota1: %2.f\n", n1);
+        printf("Sua nota2: %2.f\n", n2);
+        printf("Sua nota3: %2.f\n", n3);
+        printf("Sua nota das medias de atividade: %2.f\n", me);
+        printf("Sua nota de media de aproveitamento: %2.f\n", ma);
+        printf("conceito D obtido.");
+        printf("Você está reprovado");
+    }
+    
+    else 
+    {
+        printf("Seu numero de identificação: %d", na);
+        printf("Sua nota1: %2.f\n", n1);
+        printf("Sua nota2: %2.f\n", n2);
+        printf("Sua nota3: %2.f\n", n3);
+        printf("Sua nota das medias de atividade: %2.f\n", me);
+        printf("Sua nota de media de aproveitamento: %2.f\n", ma);
+        printf("conceito E obtido.");
+        printf("Você está reprovado");
+    }
+
+    return 0;
+}

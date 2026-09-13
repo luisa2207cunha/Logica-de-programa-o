@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main()
+{
+    float pp, p1, p2, p4;
+    int cp;
+   
+    printf("Por favor digite o preço do produto: ");
+    scanf("%f", &pp);   
+    
+    printf("Agora digite seu código de pagamento sendo o numero inteiro de 1 a 4: ");
+    scanf("%d", &cp);
+    
+    
+    if (cp == 1)
+    {
+        p1 = pp * 0.9; 
+        printf("O preço do seu produto: %2.f\n", pp);
+        printf("O seu código de pagamento: %2.f\n", cp);
+        printf("Aqui está o valor final a ser pago: %2.f\n", p1);
+    }
+    else if (cp == 2){
+       p2 = pp * 0.85;
+        printf("O preço do seu produto: %2.f\n", pp);
+        printf("O seu código de pagamento: %2.f\n", cp);
+        printf("Aqui está o valor final a ser pago: %2.f\n", p2);
+       
+    }
+    else if (cp == 3){
+        printf("O preço do seu produto: %2.f\n", pp);
+        printf("O seu código de pagamento: %2.f\n", cp);
+        printf("Aqui está o valor final a ser pago: %2.f\n", pp);
+    }
+    
+    else 
+    {
+        p4 = pp * 1.10;
+        printf("O preço do seu produto: %2.f\n", pp);
+        printf("O seu código de pagamento: %2.f\n", cp);
+        printf("Aqui está o valor final a ser pago: %2.f\n", p4);
+    }
+
+    return 0;
+}

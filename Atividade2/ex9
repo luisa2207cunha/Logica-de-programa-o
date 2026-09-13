@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    char sexo;
+    float pi1, pi2, h;
+    printf("Por favor digite seu sexo com 'M' para masculino e 'F' para feminino: ");
+    scanf( "%c", &sexo);
+    
+    printf("Agora digite sua altura: ");
+    scanf("%f", &h);
+    
+    if (sexo == 'M')
+    {
+        pi1 = (72.7 * h) - 58;
+        
+        printf("Aqui está seu peso ideal: %2.f\n", pi1);
+    }
+    else{
+        pi2 = (62.1 * h) -44.7;
+        
+        printf("Aqui está seu peso ideal: %2.f\n", pi2);
+    }
+
+    return 0;
+}

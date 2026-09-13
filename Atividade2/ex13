@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    float vm, vr;
+    float pe;
+    
+    printf("Digite a velocidade maxima permitida na via (km/h): ");
+    scanf("%f", &vm);
+    
+    printf("Digite a velocidade registrada do veiculo (km/h): ");
+    scanf("%f", &vr);
+    
+    printf("Velocidade maxima permitida: %.2f km/h\n", vm);
+    printf("Velocidade registrada: %.2f km/h\n", vr);
+    
+
+    if (vr <= vm) {
+        printf("\nSTATUS: DENTRO DO LIMITE\n");
+        printf("Nao houve infracao de transito.\n");
+    } else {
+        pe = ((vr - vm) / vm) * 100;
+        
+        printf("Percentual excedido: %.2f%%\n", pe);
+        
+        if (pe <= 20) {
+            printf("Classificacao: INFRACAO MEDIA\n");
+        } else if (pe <= 50) {
+            printf("Classificacao: INFRACAO GRAVE\n");
+        } else {
+            printf("Classificacao: INFRACAO GRAVISSIMA\n");
+        }
+        
+        if (vr > 120) {
+            printf("ALERTA: Velocidade extremamente elevada! Risco critico!\n");
+        }
+    }
+    
+    
+    return 0;
+}
