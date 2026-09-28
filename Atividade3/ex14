@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    int maior, menor;
+    
+    printf("Digite tres numeros inteiros diferentes entre si:\n");
+    printf("Primeiro numero : ");
+    scanf("%d", &a);
+    printf("Segundo numero: ");
+    scanf("%d", &b);
+    
+    // Verificação se os valores são realmente diferentes
+    if (a == b) {
+        printf("\nOs numeros devem ser diferentes.\n");
+        return 1; 
+    }
+    
+    // Encontrando o maior valor
+    if (a > b) {
+        maior = a;
+    }  else {
+        maior = b;
+    }
+    
+    // menor valor
+    if (a < b) {
+        menor = a;
+    } else  {
+        menor = b;
+    } 
+    
+    printf("O maior numero é: %d\n", maior);
+    
+    return 0;
+}

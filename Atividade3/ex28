@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int i = 1;
+    float numero, maior;
+    
+    printf("Digite o 1o numero: ");
+    scanf("%f", &numero);
+    maior = numero;  // assume o primeiro como maior inicialmente
+    i++;             // já leu o primeiro, então avança para o 2º
+    
+    while (i <= 10) {
+        printf("Digite o %do numero: ", i);
+        scanf("%f", &numero);
+        
+        // Verifica se o número atual é maior que o maior armazenado
+        if (numero > maior) {
+            maior = numero;
+        }
+        
+        i++;
+    }
+    
+    printf("\nO maior numero informado foi: %.2f\n", maior);
+    
+    return 0;
+}

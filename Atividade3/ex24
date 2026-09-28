@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int numero = 5;  
+    
+    printf("Tabuada do numero 5:\n");
+    
+    while (numero <= 50) {
+        printf("%d\n", numero);
+        numero += 5;  // pula de 5 em 5
+    }
+    
+    return 0;
+}

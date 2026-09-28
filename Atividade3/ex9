@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int km, l, consumo;
+    
+    printf("Digite os quilometros andado: ");
+    scanf("%d", &km);
+    
+    printf("Digite os litros abastecidos: ");
+    scanf("%d", &l);
+    
+    
+    consumo = km / l;
+    
+    printf("Aqui está o consumo medio do veiculo: %d", consumo);
+
+    return 0;
+}

@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int i = 1;
+    float nota;
+    int aprovados = 0, reprovados = 0;
+    float percentual;
+    
+    while (i <= 10) {
+        printf("Digite a nota do aluno %d: ", i);
+        scanf("%f", &nota);
+        
+        if (nota >= 7) {
+            aprovados++;
+        } else {
+            reprovados++;
+        }
+        
+        i++;  // é o contador
+    }
+    
+    percentual = (aprovados * 100.0) / 10;
+    
+    printf("Quantidade de aprovados:  %d\n", aprovados);
+    printf("Quantidade de reprovados: %d\n", reprovados);
+    printf("Percentual de aprovacao:  %.2f%%\n", percentual);
+    
+    return 0;
+}

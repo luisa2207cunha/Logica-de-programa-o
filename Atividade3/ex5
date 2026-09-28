@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int b, a, ar;
+    
+    printf("Digite a altura: ");
+    scanf("%d", &a);
+    
+    printf("Digite a base: ");
+    scanf("%d", &b);
+    
+    ar = b * a;
+    
+    printf("Aqui está a área do retangulo: %d\n", ar);
+
+    return 0;
+}
