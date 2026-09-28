@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    char nomeProduto[100];
+    int quant;
+    float pu;
+    float vt;
+    
+    printf("Digite o nome do produto: ");
+    scanf(" %99[^\n]", nomeProduto);  
+    
+    printf("Digite a quantidade comprada: ");
+    scanf("%d", &quant);
+    
+    printf("Digite o preco unitario (R$): ");
+    scanf("%f", &pu);
+    
+    vt = quant * pu;
+    
+    printf("Produto: %s\n", nomeProduto);
+    printf("Quantidade: %d\n", quant);
+    printf("Preco unitario: R$ %.2f\n", pu);
+    printf("alor total: R$ %.2f\n", vt);
+    
+    return 0;
+}

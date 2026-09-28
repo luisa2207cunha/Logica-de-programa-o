@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#define PI 3.14159
+
+float calcularArea(float raio) {
+    return PI * raio * raio;
+    //criou uma função//
+}
+
+int main() {
+    float raio;
+    
+    printf("Digite o raio do círculo: ");
+    scanf("%f", &raio);
+    
+    if (raio < 0) {
+        printf("Raio inválido!\n");
+        return 1;
+    }
+    
+    printf("Área do círculo: %.2f\n", calcularArea(raio));
+    //chama a função já calculada//
+    
+    return 0;
+}

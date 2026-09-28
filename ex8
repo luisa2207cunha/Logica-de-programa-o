@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main()
+{
+    int ht, h, salario;
+    
+    printf("Digite suas horas trabalhadas: ");
+    scanf("%d", &ht);
+    
+    printf("Digite o valor recebido por hora: ");
+    scanf("%d", &h);
+    
+    
+    salario = ht * h;
+    
+    printf("Aqui está o seu salaro bruto: %d", salario);
+
+    return 0;
+}

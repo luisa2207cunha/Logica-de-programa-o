@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int quant, i = 1;
+    float n, s = 0, m;
+    
+    printf("Digite a quantidade de alunos da turma: ");
+    scanf("%d", &quant);
+    
+    while (i <= quant) {
+        printf("Digite a nota do aluno %d: ", i);
+        scanf("%f", &n);
+        s += n;  // acumula a nota
+        i++;           // incrementa o contador
+    }
+    
+    // Calcula a média
+    m = s / quant;
+    
+    printf("\nMedia geral da turma: %.2f\n", m);
+    
+    return 0;
+}

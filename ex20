@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main()
+{
+    float n1, n2, resultado;
+    char operacao;
+
+    printf("Digite o primeiro numero: ");
+    scanf("%f", &n1);
+
+    printf("Digite o segundo numero: ");
+    scanf("%f", &n2);
+
+    printf("Digite a operacao (+, -, * ou /): ");
+    scanf(" %c", &operacao);   // espaço antes do %c ignora o Enter anterior
+
+    // Verifica qual operação foi escolhida
+    if (operacao == '+')
+    {
+        resultado = n1 + n2;
+        printf("\n%.2f + %.2f = %.2f\n", n1, n2, resultado);
+    }
+    else if (operacao == '-')
+    {
+        resultado = n1 - n2;
+        printf("\n%.2f - %.2f = %.2f\n", n1, n2, resultado);
+    }
+    else if (operacao == '*')
+    {
+        resultado = n1 * n2;
+        printf("\n%.2f * %.2f = %.2f\n", n1, n2, resultado);
+    }
+    else if (operacao == '/')
+    {
+        // Verifica divisão por zero antes de calcular
+        if (n2 == 0)
+        {
+            printf("\nErro: nao e possivel dividir por zero!\n");
+        }
+        else
+        {
+            resultado = n1 / n2;
+            printf("\n%.2f / %.2f = %.2f\n", n1, n2, resultado);
+        }
+    }
+    else
+    {
+        printf("\nErro: operacao invalida!\n");
+    }
+
+    return 0;
+}
