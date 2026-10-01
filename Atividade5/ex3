@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float notas[5];
+    float quadrado[5];
+    int c;
+    
+    for(c = 0; c < 5; c++){
+        printf("Digite a nota para inserir no vetor: ");
+        scanf("%f", &notas[c]);
+    }
+    
+    for(c = 0; c < 5; c++){
+        quadrado[c] = pow(notas[c],2);
+    }
+    
+    for(c = 0; c < 5; c++){
+        printf("%f ", notas[c]);
+        printf("%f ", quadrado[c]);
+    }
+    
+    return 0;
+}

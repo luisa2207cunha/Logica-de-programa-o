@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int vetor[10];
+    int contador_n = 0;   // negativos
+    int contador_p = 0;   // positivos
+    int soma = 0;         // soma dos positivos
+    
+    printf("Digite 10 valores inteiros:\n");
+    for (int i = 0; i < 10; i++) {
+        printf("Posicao %d: ", i);
+        scanf("%d", &vetor[i]);
+    }
+    
+    // Contando negativos e somando positivos
+    for (int i = 0; i < 10; i++) {
+        if (vetor[i] < 0) {
+            contador_n++;
+        }
+        else if (vetor[i] > 0) {
+            contador_p++;
+            soma += vetor[i];   // acumula o VALOR do positivo
+        }
+        // se for 0, não faz nada
+    }
+    
+    printf("\nQuantidade de numeros negativos: %d\n", contador_n);
+    printf("Quantidade de numeros positivos: %d\n", contador_p);
+    printf("Soma dos numeros positivos: %d\n", soma);
+    
+    return 0;
+}

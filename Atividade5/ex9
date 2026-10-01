@@ -1,0 +1,26 @@
+int main() {
+    int vetor[6];
+    int i;
+    int valor;
+
+    printf("Digite 6 numeros inteiros pares:\n");
+
+    // Leitura dos 6 valores
+    for (i = 0; i < 6; i++) {
+        do {
+            printf("Posicao %d: ", i);
+            scanf("%d", &valor);
+            }
+        } while (valor % 2 != 0);
+
+        vetor[i] = valor;
+    }
+
+    printf("\nValores lidos na ordem inversa:\n");
+    for (i = 5; i >= 0; i--) {
+        printf("%d ", vetor[i]);
+    }
+    printf("\n");
+
+    return 0;
+}

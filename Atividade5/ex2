@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int n1, n2, n3, n4, n5, n6;
+    int n[6]; //0, 1, 2, 3, 4, 5
+    int contador;
+    
+    for(contador = 0; contador < 6; contador++ ){
+        printf("Digite os valores para inserir no vetor: ");
+        scanf("%d", &n[contador]);
+    }
+    
+    printf("---------------------");
+    printf("Valor do vetor 1: %d\n", n[0]);
+    printf("Valor do vetor 2: %d\n", n[1]);
+    printf("Valor do vetor 3: %d\n", n[2]);
+    printf("Valor do vetor 4: %d\n", n[3]);
+    printf("Valor do vetor 5: %d\n", n[4]);
+    printf("Valor do vetor 6: %d\n", n[5]);
+    
+    return 0;
+}

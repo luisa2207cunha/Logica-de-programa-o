@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int notas[15];
+    int i;
+    int soma = 0;
+    float media;
+
+    for (i = 0; i < 15; i++) {
+        printf("Digite a nota %d: ", i + 1);
+        scanf("%d", &notas[i]);
+        soma += notas[i];   // acumula a soma
+    }
+
+    // Calcula a média (força o cast para float)
+    media = (float) soma / 15;
+
+    printf("\nAqui esta a media geral: %.2f\n", media);
+
+    return 0;
+}

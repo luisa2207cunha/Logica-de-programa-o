@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int vetor[6];
+    int i;
+    
+    for (i = 0; i < 6; i++) {
+        printf("Digite um numero inteiro:\n");
+        scanf("%d", &vetor[i]);
+    }
+
+    printf("---------------------");
+    printf("Valor do vetor 6: %d\n", vetor[5]);
+    printf("Valor do vetor 5: %d\n", vetor[4]);
+    printf("Valor do vetor 4: %d\n", vetor[3]);
+    printf("Valor do vetor 3: %d\n", vetor[2]);
+    printf("Valor do vetor 2: %d\n", vetor[1]);
+    printf("Valor do vetor 1: %d\n", vetor[0]);
+
+    return 0;
+}

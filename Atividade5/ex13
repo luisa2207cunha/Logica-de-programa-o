@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int vetor[5];
+    int i;
+    int maior, menor;
+    int posmaior = 0;
+    int posmenor = 0;
+    
+    printf("Digite 10 numeros inteiros:\n");
+
+    for (i = 0; i < 5; i++) {
+        printf("Posicao %d: ", i);
+        scanf("%d", &vetor[i]);
+    }
+
+    // Inicializa maior e menor com o primeiro elemento
+    maior = vetor[0];
+    menor = vetor[0];
+
+    // Percorre o vetor para encontrar o maior e o menor
+    for (i = 1; i < 5; i++) {
+        if (vetor[i] > maior) {
+            maior = vetor[i];
+            posmaior = i;
+        }
+        if (vetor[i] < menor) {
+            menor = vetor[i];
+            posmenor = i;
+        }
+    }
+
+    printf("\nMenor elemento do vetor: %d\n", menor);
+    printf("Posicao: %d\n", posmenor);
+
+    printf("Maior elemento do vetor: %d\n", maior);
+    printf("Posicao: %d\n", posmaior);
+
+    return 0;
+}

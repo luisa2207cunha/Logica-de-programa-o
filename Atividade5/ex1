@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[6] ={1, 0, 5, -2, -5, 7}; //0, 1, 2, 3, 4, 5
+    int soma;
+    
+
+    soma = a[0] + a[1] + a[5];
+    
+    printf("Aqui está a soma nos numeros em primeiro, segundo e sexto lugar: %d\n", soma);
+    
+    a[4] = 100; //modificando o valor na posição 4
+    
+    printf("---------------------");
+    printf("Valor do vetor 1: %d\n", a[0]);
+    printf("Valor do vetor 2: %d\n", a[1]);
+    printf("Valor do vetor 3: %d\n", a[2]);
+    printf("Valor do vetor 4: %d\n", a[3]);
+    printf("Valor do vetor 5: %d\n", a[4]);
+    printf("Valor do vetor 6: %d\n", a[5]);
+    
+    return 0;
+}

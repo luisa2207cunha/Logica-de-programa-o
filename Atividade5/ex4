@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    float vetor[8] = {1, 2, 3, 4, 5, 6, 7, 8};
+    int x, y;
+    
+    printf("\nDigite um numero inteiro de 0 a 7:\n");
+    printf("Posicao X: ");
+    scanf("%d", &x);
+    printf("Posicao Y: ");
+    scanf("%d", &y);
+    
+    if (x >= 0 && x < 8 && y >= 0 && y < 8) {
+        float soma = vetor[x] + vetor[y];
+        printf("\nValor na posicao X (%d): %.2f\n", x, vetor[x]);
+        printf("Valor na posicao Y (%d): %.2f\n", y, vetor[y]);
+        printf("Soma dos valores: %.2f\n", soma);
+    } else {
+        printf("Posicoes invalidas! Digite valores entre 0 e 7.\n");
+    }
+    
+    return 0;
+}
